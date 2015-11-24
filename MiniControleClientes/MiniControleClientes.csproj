@@ -56,6 +56,10 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Fornecedor.cs" />
+    <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\Produto.cs" />
+    <Compile Include="Model\Servico.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\frmClienteCadastro.cs">
@@ -133,7 +137,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dados\" />
-    <Folder Include="Negocio\" />
+    <Folder Include="Negocio\Cliente\" />
+    <Folder Include="Negocio\Fornecedor\" />
+    <Folder Include="Negocio\NewFolder1\" />
+    <Folder Include="Negocio\Produto\" />
+    <Folder Include="Negocio\Servico\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
