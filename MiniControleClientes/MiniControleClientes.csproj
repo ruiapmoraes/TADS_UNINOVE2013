@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -60,8 +61,10 @@
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="Model\Servico.cs" />
+    <Compile Include="Negocio\ClienteBO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\conexao.cs" />
     <Compile Include="Views\frmClienteCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +125,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\frmClienteCadastro.resx">
+      <DependentUpon>frmClienteCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmFornecedorCadastro.resx">
+      <DependentUpon>frmFornecedorCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -137,11 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dados\" />
-    <Folder Include="Negocio\Cliente\" />
-    <Folder Include="Negocio\Fornecedor\" />
-    <Folder Include="Negocio\NewFolder1\" />
-    <Folder Include="Negocio\Produto\" />
-    <Folder Include="Negocio\Servico\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

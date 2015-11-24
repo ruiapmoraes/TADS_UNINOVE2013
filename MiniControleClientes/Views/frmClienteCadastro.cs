@@ -16,5 +16,28 @@ namespace MiniControleClientes.Views
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Botão para criar um novo cadastro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+        }
+
+        /// <summary>
+        /// Limpar campos da tela
+        /// </summary>
+        private void LimparCampos()
+        {
+            txtNome.Clear();
+            txtEndereco.Clear();
+            txtBairro.Clear();
+            txtCEP.Clear();
+            txtTelefone.Clear();
+            txtNome.Focus();
+        }
     }
 }
